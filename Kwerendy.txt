@@ -1,0 +1,10 @@
+SELECT * FROM Oceny WHERE id_ucznia = 123;
+SELECT * FROM Klasy WHERE id_nauczyciela = 456;
+SELECT * FROM Klasy k JOIN Uczniowie u ON k.id_ucznia = u.id WHERE u.imie = 'Jan';
+SELECT n.* FROM Nauczyciele n JOIN Oceny o ON o.id_nauczyciela = n.id WHERE o.id_sprawdzianu = 789 AND o.ocena = 5;
+SELECT * FROM Wiadomości WHERE id_ucznia = 234;
+SELECT * FROM Plan_Zajęć WHERE id_klasy = 789;
+SELECT * FROM Oceny WHERE przedmiot = 'Matematyka';
+SELECT * FROM Klasy WHERE sala_lekcyjna IS NOT NULL;
+SELECT * FROM Sprawdziany WHERE id_nauczyciela = 789;
+SELECT * FROM Wiadomości WHERE nadawca = 'Administracja';
